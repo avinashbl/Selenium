@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="39839" started-at="2018-10-24T10:07:51Z" finished-at="2018-10-24T10:08:31Z">
+  <suite name="TestSuite" duration-ms="44811" started-at="2018-10-30T08:42:41Z" finished-at="2018-10-30T08:43:26Z">
     <groups>
     </groups>
-    <test name="ChromeTEST" duration-ms="39839" started-at="2018-10-24T10:07:51Z" finished-at="2018-10-24T10:08:31Z">
-      <class name="testScenarios.TC008_Home">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC008_Home@14acaea5]" name="setup" is-config="true" duration-ms="27787" started-at="2018-10-24T10:07:51Z" finished-at="2018-10-24T10:08:18Z">
+    <test name="ChromeTEST" duration-ms="44811" started-at="2018-10-30T08:42:41Z" finished-at="2018-10-30T08:43:26Z">
+      <class name="testScenarios.TC006_Register">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="setup" is-config="true" duration-ms="25682" started-at="2018-10-30T08:42:41Z" finished-at="2018-10-30T08:43:07Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC008_Home@14acaea5]" name="WelcomePage" duration-ms="8553" started-at="2018-10-24T10:08:19Z" finished-at="2018-10-24T10:08:27Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="WelcomePage" duration-ms="2141" started-at="2018-10-30T08:43:07Z" finished-at="2018-10-30T08:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC008_Home@14acaea5]" name="ForgotPassword" duration-ms="3456" started-at="2018-10-24T10:08:27Z" finished-at="2018-10-24T10:08:31Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@14acaea5]" name="Register" duration-ms="2378" started-at="2018-10-30T08:43:09Z" finished-at="2018-10-30T08:43:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ForgotPassword -->
-      </class> <!-- testScenarios.TC008_Home -->
+        </test-method> <!-- Register -->
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@14acaea5]" name="LegalNoticeTab" duration-ms="7974" started-at="2018-10-30T08:43:11Z" finished-at="2018-10-30T08:43:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LegalNoticeTab -->
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@14acaea5]" name="SupplierRegistration" duration-ms="6590" started-at="2018-10-30T08:43:19Z" finished-at="2018-10-30T08:43:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SupplierRegistration -->
+      </class> <!-- testScenarios.TC006_Register -->
     </test> <!-- ChromeTEST -->
   </suite> <!-- TestSuite -->
 </testng-results>

@@ -6,6 +6,6 @@
 	<test name="ChromeTEST">
 		<parameter name='browser' value="Chrome"></parameter>
 		<classes>
-			<class name="testScenarios.TC008_Home"></class></classes></test>
+			<class name="testScenarios.TC006_Register"></class></classes></test>
 
 </suite>

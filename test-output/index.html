@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC008_Home" hash-for-method="ForgotPassword">ForgotPassword</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="LegalNoticeTab">LegalNoticeTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC008_Home" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="Register">Register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="SupplierRegistration">SupplierRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -125,14 +135,28 @@
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testScenarios.TC008_Home</span>
+              <span class="class-name">testScenarios.TC006_Register</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ForgotPassword">
-                  </a> <!-- ForgotPassword -->
-                  <span class="method-name">ForgotPassword</span>
+                  <a name="LegalNoticeTab">
+                  </a> <!-- LegalNoticeTab -->
+                  <span class="method-name">LegalNoticeTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Register">
+                  </a> <!-- Register -->
+                  <span class="method-name">Register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SupplierRegistration">
+                  </a> <!-- SupplierRegistration -->
+                  <span class="method-name">SupplierRegistration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -157,7 +181,7 @@
   &lt;test thread-count=&quot;2&quot; name=&quot;ChromeTEST&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScenarios.TC008_Home&quot;/&gt;
+      &lt;class name=&quot;testScenarios.TC006_Register&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTEST --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -197,20 +221,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'WelcomePage')
-data.setCell(0, 2, 'testScenarios.TC008_Home')
-data.setCell(0, 3, 8553);
+data.setCell(0, 1, 'LegalNoticeTab')
+data.setCell(0, 2, 'testScenarios.TC006_Register')
+data.setCell(0, 3, 7974);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ForgotPassword')
-data.setCell(1, 2, 'testScenarios.TC008_Home')
-data.setCell(1, 3, 3456);
+data.setCell(1, 1, 'SupplierRegistration')
+data.setCell(1, 2, 'testScenarios.TC006_Register')
+data.setCell(1, 3, 6590);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Register')
+data.setCell(2, 2, 'testScenarios.TC006_Register')
+data.setCell(2, 3, 2378);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'WelcomePage')
+data.setCell(3, 2, 'testScenarios.TC006_Register')
+data.setCell(3, 3, 2141);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -236,18 +268,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScenarios.TC008_Home</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">WelcomePage</span>
-                <span class="method-start">27817 ms</span>
+                <span class="method-start">25712 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">ForgotPassword</span>
-                <span class="method-start">36377 ms</span>
+                <span class="method-name">Register</span>
+                <span class="method-start">27859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LegalNoticeTab</span>
+                <span class="method-start">30239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SupplierRegistration</span>
+                <span class="method-start">38215 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
