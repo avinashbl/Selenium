@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="44811" started-at="2018-10-30T08:42:41Z" finished-at="2018-10-30T08:43:26Z">
+  <suite name="TestSuite" duration-ms="50949" started-at="2018-10-30T09:48:45Z" finished-at="2018-10-30T09:49:35Z">
     <groups>
     </groups>
-    <test name="ChromeTEST" duration-ms="44811" started-at="2018-10-30T08:42:41Z" finished-at="2018-10-30T08:43:26Z">
+    <test name="ChromeTEST" duration-ms="50949" started-at="2018-10-30T09:48:45Z" finished-at="2018-10-30T09:49:35Z">
       <class name="testScenarios.TC006_Register">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="setup" is-config="true" duration-ms="25682" started-at="2018-10-30T08:42:41Z" finished-at="2018-10-30T08:43:07Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="setup" is-config="true" duration-ms="21121" started-at="2018-10-30T09:48:45Z" finished-at="2018-10-30T09:49:06Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="WelcomePage" duration-ms="2141" started-at="2018-10-30T08:43:07Z" finished-at="2018-10-30T08:43:09Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="WelcomePage" duration-ms="8807" started-at="2018-10-30T09:49:06Z" finished-at="2018-10-30T09:49:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@14acaea5]" name="Register" duration-ms="2378" started-at="2018-10-30T08:43:09Z" finished-at="2018-10-30T08:43:11Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@14acaea5]" name="Register" duration-ms="3399" started-at="2018-10-30T09:49:14Z" finished-at="2018-10-30T09:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@14acaea5]" name="LegalNoticeTab" duration-ms="7974" started-at="2018-10-30T08:43:11Z" finished-at="2018-10-30T08:43:19Z">
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@14acaea5]" name="LegalNoticeTab" duration-ms="9056" started-at="2018-10-30T09:49:18Z" finished-at="2018-10-30T09:49:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LegalNoticeTab -->
-        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@14acaea5]" name="SupplierRegistration" duration-ms="6590" started-at="2018-10-30T08:43:19Z" finished-at="2018-10-30T08:43:26Z">
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@14acaea5]" name="SupplierRegistration" duration-ms="8528" started-at="2018-10-30T09:49:27Z" finished-at="2018-10-30T09:49:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupplierRegistration -->
