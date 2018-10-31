@@ -24,6 +24,13 @@ public class TC006_Register
 	HomePage Hm;
 				
 	DesiredCapabilities caps = new DesiredCapabilities();
+	
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+			    (((RemoteWebDriver) driver).getSessionId()).toString(), this.getClass().getName());
+	    System.out.println(message);
+	}
+			
 	@BeforeTest
 	@Parameters("browser")
 	public void setup(String browser)throws Exception
@@ -31,13 +38,12 @@ public class TC006_Register
 		if(browser.equalsIgnoreCase("Chrome"))
 		{
 			System.out.println("Launching Chrome");
-			caps.setCapability("name","TestChrome");
 			caps.setCapability("platform", "Windows 10");	
 			caps.setCapability("browserName","chrome");
 			caps.setCapability("version", "latest");
 			caps.setCapability("passed",true);
-			caps.setCapability("build","CrossBrowser_Test_Build1"); 
 			caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
+			caps.setCapability("Name", this.getClass().getName());
 			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
 		}
 		DesiredCapabilities caps1 = DesiredCapabilities.internetExplorer();

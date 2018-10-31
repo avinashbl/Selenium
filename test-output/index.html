@@ -160,8 +160,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;BDC7-L-4SVCVN2&apos;, ip: &apos;10.246.56.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 3faa6d0fd76e4e7ab6b7fda101b...}
-Session ID: 3faa6d0fd76e4e7ab6b7fda101b1eba0
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49750}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 3f2f0f4a02e24938939a965a3dd...}
+Session ID: 3f2f0f4a02e24938939a965a3dd70bd6
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -170,11 +170,11 @@ Session ID: 3faa6d0fd76e4e7ab6b7fda101b1eba0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at pages.HomePage.CheckCurrentPage(HomePage.java:46)
-	at testScenarios.TC006_Register.WelcomePage(TC006_Register.java:73)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at pages.HomePage.CheckCurrentPage(HomePage.java:49)
+	at testScenarios.TC006_Register.WelcomePage(TC006_Register.java:79)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -271,24 +271,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LegalNoticeTab')
 data.setCell(0, 2, 'testScenarios.TC006_Register')
-data.setCell(0, 3, 8503);
+data.setCell(0, 3, 14632);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SupplierRegistration')
+data.setCell(1, 1, 'Register')
 data.setCell(1, 2, 'testScenarios.TC006_Register')
-data.setCell(1, 3, 6641);
+data.setCell(1, 3, 8030);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Register')
+data.setCell(2, 1, 'SupplierRegistration')
 data.setCell(2, 2, 'testScenarios.TC006_Register')
-data.setCell(2, 3, 3074);
+data.setCell(2, 3, 7119);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'WelcomePage')
 data.setCell(3, 2, 'testScenarios.TC006_Register')
-data.setCell(3, 3, 2136);
+data.setCell(3, 3, 4278);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -323,19 +323,19 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">WelcomePage</span>
-                <span class="method-start">24066 ms</span>
+                <span class="method-start">22981 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Register</span>
-                <span class="method-start">26202 ms</span>
+                <span class="method-start">27268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LegalNoticeTab</span>
-                <span class="method-start">29276 ms</span>
+                <span class="method-start">35300 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SupplierRegistration</span>
-                <span class="method-start">37779 ms</span>
+                <span class="method-start">49934 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

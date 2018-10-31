@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="44441" started-at="2018-10-31T10:21:48Z" finished-at="2018-10-31T10:22:32Z">
+  <suite name="TestSuite" duration-ms="57061" started-at="2018-10-31T13:56:50Z" finished-at="2018-10-31T13:57:47Z">
     <groups>
     </groups>
-    <test name="ChromeTEST" duration-ms="44441" started-at="2018-10-31T10:21:48Z" finished-at="2018-10-31T10:22:32Z">
+    <test name="ChromeTEST" duration-ms="57061" started-at="2018-10-31T13:56:50Z" finished-at="2018-10-31T13:57:47Z">
       <class name="testScenarios.TC006_Register">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="setup" is-config="true" duration-ms="24030" started-at="2018-10-31T10:21:48Z" finished-at="2018-10-31T10:22:12Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="setup" is-config="true" duration-ms="22949" started-at="2018-10-31T13:56:50Z" finished-at="2018-10-31T13:57:13Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="WelcomePage" duration-ms="2136" started-at="2018-10-31T10:22:12Z" finished-at="2018-10-31T10:22:14Z">
+        <test-method status="FAIL" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@14acaea5]" name="WelcomePage" duration-ms="4278" started-at="2018-10-31T13:57:13Z" finished-at="2018-10-31T13:57:17Z">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: element is not attached to the page document
@@ -29,8 +29,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
 System info: host: 'BDC7-L-4SVCVN2', ip: '10.246.56.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 3faa6d0fd76e4e7ab6b7fda101b...}
-Session ID: 3faa6d0fd76e4e7ab6b7fda101b1eba0]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49750}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 3f2f0f4a02e24938939a965a3dd...}
+Session ID: 3f2f0f4a02e24938939a965a3dd70bd6]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
@@ -41,8 +41,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
 System info: host: 'BDC7-L-4SVCVN2', ip: '10.246.56.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 3faa6d0fd76e4e7ab6b7fda101b...}
-Session ID: 3faa6d0fd76e4e7ab6b7fda101b1eba0
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49750}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 3f2f0f4a02e24938939a965a3dd...}
+Session ID: 3f2f0f4a02e24938939a965a3dd70bd6
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -55,15 +55,15 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-at pages.HomePage.CheckCurrentPage(HomePage.java:46)
-at testScenarios.TC006_Register.WelcomePage(TC006_Register.java:73)
+at com.sun.proxy.$Proxy9.getText(Unknown Source)
+at pages.HomePage.CheckCurrentPage(HomePage.java:49)
+at testScenarios.TC006_Register.WelcomePage(TC006_Register.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -90,15 +90,15 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@14acaea5]" name="Register" duration-ms="3074" started-at="2018-10-31T10:22:14Z" finished-at="2018-10-31T10:22:17Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@14acaea5]" name="Register" duration-ms="8030" started-at="2018-10-31T13:57:17Z" finished-at="2018-10-31T13:57:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@14acaea5]" name="LegalNoticeTab" duration-ms="8503" started-at="2018-10-31T10:22:17Z" finished-at="2018-10-31T10:22:25Z">
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@14acaea5]" name="LegalNoticeTab" duration-ms="14632" started-at="2018-10-31T13:57:25Z" finished-at="2018-10-31T13:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LegalNoticeTab -->
-        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@14acaea5]" name="SupplierRegistration" duration-ms="6641" started-at="2018-10-31T10:22:25Z" finished-at="2018-10-31T10:22:32Z">
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@14acaea5]" name="SupplierRegistration" duration-ms="7119" started-at="2018-10-31T13:57:40Z" finished-at="2018-10-31T13:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupplierRegistration -->
