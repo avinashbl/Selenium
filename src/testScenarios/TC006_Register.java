@@ -37,6 +37,7 @@ public class TC006_Register
 			caps.setCapability("version", "latest");
 			caps.setCapability("passed",true);
 			caps.setCapability("build","CrossBrowser_Test_Build1"); 
+			caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
 			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
 		}
 		DesiredCapabilities caps1 = DesiredCapabilities.internetExplorer();
