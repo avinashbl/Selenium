@@ -17,6 +17,9 @@ import org.testng.annotations.Test;
 import parallelTest.Constant;
 import pages.HomePage;
 import pages.Register;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+
 
 public class TC006_Register
 {
@@ -25,12 +28,6 @@ public class TC006_Register
 				
 	DesiredCapabilities caps = new DesiredCapabilities();
 	
-	private void printSessionId() {
-		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
-			    (((RemoteWebDriver) driver).getSessionId()).toString(), this.getClass().getName());
-	    System.out.println(message);
-	}
-			
 	@BeforeTest
 	@Parameters("browser")
 	public void setup(String browser)throws Exception
@@ -71,6 +68,7 @@ public class TC006_Register
 		}
 		driver.get(Constant.URL);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		
 	}
 	
 	@Test(priority=0)
@@ -97,5 +95,17 @@ public class TC006_Register
 		RG.SupplierRegistration();
 	}
 	
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+			    (((RemoteWebDriver) driver).getSessionId()).toString(), this.getClass().getName());
+	    System.out.println(message);
+	}
+	
+	@AfterMethod(description = "Throw the test execution results into saucelabs")
+	  public void tearDown(ITestResult result) {
+	    String txt = "sauce:job-result=" + (result.isSuccess() ? "passed" : "failed");
+	    printSessionId();
+	   }
+		
 }
 
