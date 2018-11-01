@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="49537" started-at="2018-11-01T09:53:10Z" finished-at="2018-11-01T09:54:00Z">
+  <suite name="TestSuite" duration-ms="46712" started-at="2018-11-01T10:04:55Z" finished-at="2018-11-01T10:05:42Z">
     <groups>
     </groups>
-    <test name="ChromeTEST" duration-ms="49537" started-at="2018-11-01T09:53:10Z" finished-at="2018-11-01T09:54:00Z">
+    <test name="ChromeTEST" duration-ms="46712" started-at="2018-11-01T10:04:55Z" finished-at="2018-11-01T10:05:42Z">
       <class name="testScenarios.TC006_Register">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="setup" is-config="true" duration-ms="21294" started-at="2018-11-01T09:53:10Z" finished-at="2018-11-01T09:53:32Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="setup" is-config="true" duration-ms="16088" started-at="2018-11-01T10:04:55Z" finished-at="2018-11-01T10:05:11Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="WelcomePage" duration-ms="7743" started-at="2018-11-01T09:53:32Z" finished-at="2018-11-01T09:53:39Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="WelcomePage" duration-ms="9266" started-at="2018-11-01T10:05:11Z" finished-at="2018-11-01T10:05:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="349" started-at="2018-11-01T09:53:39Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T09:53:40Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="433" started-at="2018-11-01T10:05:20Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T10:05:21Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@46d56d67]" name="Register" duration-ms="3239" started-at="2018-11-01T09:53:40Z" finished-at="2018-11-01T09:53:43Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@46d56d67]" name="Register" duration-ms="4329" started-at="2018-11-01T10:05:21Z" finished-at="2018-11-01T10:05:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="358" started-at="2018-11-01T09:53:43Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T09:53:43Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="523" started-at="2018-11-01T10:05:25Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T10:05:26Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@46d56d67]" name="LegalNoticeTab" duration-ms="8800" started-at="2018-11-01T09:53:43Z" finished-at="2018-11-01T09:53:52Z">
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@46d56d67]" name="LegalNoticeTab" duration-ms="8231" started-at="2018-11-01T10:05:26Z" finished-at="2018-11-01T10:05:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LegalNoticeTab -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="347" started-at="2018-11-01T09:53:52Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T09:53:53Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="361" started-at="2018-11-01T10:05:34Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T10:05:34Z">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@46d56d67]" name="SupplierRegistration" duration-ms="7025" started-at="2018-11-01T09:53:53Z" finished-at="2018-11-01T09:54:00Z">
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@46d56d67]" name="SupplierRegistration" duration-ms="7067" started-at="2018-11-01T10:05:34Z" finished-at="2018-11-01T10:05:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupplierRegistration -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="300" started-at="2018-11-01T09:54:00Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T09:54:00Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="335" started-at="2018-11-01T10:05:41Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-01T10:05:42Z">
           <params>
             <param index="0">
               <value>

@@ -98,7 +98,7 @@ public class TC006_Register
 	private void printSessionId() {
 		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
 				(((RemoteWebDriver) driver).getSessionId()), this.getClass().getName());
-	   // System.out.println(message);
+	    System.out.println(message);
 	}
 	
 	@AfterMethod(description = "Throw the test execution results into saucelabs")
