@@ -6,6 +6,7 @@
     <classes>
       <class name="testScenarios.TC006_Register">
         <methods>
+          <include name="tearDown"/>
           <include name="WelcomePage"/>
           <include name="setup"/>
         </methods>

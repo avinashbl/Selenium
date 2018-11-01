@@ -97,15 +97,20 @@ public class TC006_Register
 	
 	private void printSessionId() {
 		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
-			    (((RemoteWebDriver) driver).getSessionId()).toString(), this.getClass().getName());
-	    System.out.println(message);
+				(((RemoteWebDriver) driver).getSessionId()), this.getClass().getName());
+	   // System.out.println(message);
 	}
 	
 	@AfterMethod(description = "Throw the test execution results into saucelabs")
-	  public void tearDown(ITestResult result) {
+	public void tearDown(ITestResult result) {
 	    String txt = "sauce:job-result=" + (result.isSuccess() ? "passed" : "failed");
+	    ((RemoteWebDriver) driver).executeScript(txt);
 	    printSessionId();
-	   }
+	}
+	
+	void annotate(String text) {
+		((RemoteWebDriver) driver).executeScript("sauce:context=" + text);
+	  }
 		
 }
 
