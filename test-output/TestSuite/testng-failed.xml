@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
-  <test thread-count="2" name="ChromeTEST(failed)" parallel="tests">
+  <test thread-count="2" name="TC006_Register(failed)" parallel="tests">
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="testScenarios.TC006_Register">
         <methods>
-          <include name="Register"/>
-          <include name="LegalNoticeTab"/>
           <include name="tearDown"/>
-          <include name="SupplierRegistration"/>
+          <include name="WelcomePage"/>
           <include name="setup"/>
+          <include name="getTestName"/>
         </methods>
       </class> <!-- testScenarios.TC006_Register -->
     </classes>
-  </test> <!-- ChromeTEST(failed) -->
+  </test> <!-- TC006_Register(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

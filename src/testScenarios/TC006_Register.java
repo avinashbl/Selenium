@@ -19,21 +19,19 @@ import pages.HomePage;
 import pages.Register;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import com.beust.jcommander.Parameter;
+import org.testng.ITestContext;
+import org.testng.annotations.BeforeClass;
+
 
 public class TC006_Register
 {
 	WebDriver driver;
 	HomePage Hm;
-				
-	private ThreadLocal<String> sessionId = new ThreadLocal<String>();
-	private String methodName;
-	
+					
 	DesiredCapabilities caps = new DesiredCapabilities();
 	
 	@BeforeTest
 	@Parameters("browser")
-		
 	public void setup(String browser)throws Exception
 	{
 		if(browser.equalsIgnoreCase("Chrome"))
@@ -43,41 +41,14 @@ public class TC006_Register
 			caps.setCapability("browserName","chrome");
 			caps.setCapability("version", "latest");
 			caps.setCapability("passed",true);
-			//caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
-			caps.setCapability("build", methodName + "__" + System.getenv("BUILD_NUMBER"));
-			caps.setCapability("Name", this.getClass().getName());
-			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
-		}
-		DesiredCapabilities caps1 = DesiredCapabilities.internetExplorer();
-		if(browser.equalsIgnoreCase("InternetExplorer1"))
-		{
-			System.out.println("Launching IE");
-			caps1.setCapability("name","IETest");
-			caps1.setCapability("platformName", "Windows 7");
-			caps1.setCapability("version","11.0");
-			caps1.setCapability("passed",true);
-			caps1.setCapability("build","CrossBrowser_Test_Build1");
-			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps1);
-		}
-		
-		if(browser.equalsIgnoreCase("Firefox"))
-		{
-			System.out.println("Launching Firefox");	
-			caps.setCapability("name","TestFirefox");
-			caps.setCapability("platform", "Windows 10");	
-			caps.setCapability("browserName","Firefox");
-			caps.setCapability("version", "latest");
-			caps.setCapability("passed",true);
-			caps.setCapability("build","CrossBrowser_Pilot"); 
+			caps.setCapability("name", "TC006_Register");
+			caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER")); 			
 			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
 		}
 		driver.get(Constant.URL);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		
-		String id = ((RemoteWebDriver) driver).getSessionId().toString();
-	    sessionId.set(id);
 	}
-			
+	
 	@Test(priority=0)
 	public void WelcomePage() {
 		Hm=new HomePage(driver);
@@ -102,24 +73,20 @@ public class TC006_Register
 		RG.SupplierRegistration();
 	}
 	
-	//private void printSessionId() {
-		//String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
-			//	(((RemoteWebDriver) driver).getSessionId()), this.getClass().getName());
-	    //System.out.println(message);
-		
-		// set current sessionId
-	    //String id = ((RemoteWebDriver) driver).getSessionId().toString();
-	    //sessionId.set(id);
-	//}
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+				(((RemoteWebDriver) driver).getSessionId()), System.getenv("JOB_NAME")+ "__" + System.getenv("BUILD_NUMBER"));
+	    System.out.println(message);
+	}
 	
 	@AfterMethod(description = "Throw the test execution results into saucelabs")
 	public void tearDown(ITestResult result) {
 	    String txt = "sauce:job-result=" + (result.isSuccess() ? "passed" : "failed");
 	    ((RemoteWebDriver) driver).executeScript(txt);
-		//  printSessionId();
+	    printSessionId();
 	}
 	
-	protected void annotate(String text) {
+	void annotate(String text) {
 		((RemoteWebDriver) driver).executeScript("sauce:context=" + text);
 	  }
 		

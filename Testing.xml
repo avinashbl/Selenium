@@ -3,7 +3,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="TestSuite" thread-count="2" parallel="tests" >
-	<test name="ChromeTEST">
+	<test name="TC006_Register">
 		<parameter name='browser' value="Chrome"></parameter>
 		<classes>
 			<class name="testScenarios.TC006_Register"></class></classes></test>
