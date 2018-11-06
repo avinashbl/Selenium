@@ -19,21 +19,17 @@ import pages.HomePage;
 import pages.Register;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import com.beust.jcommander.Parameter;
 
-public class TC006_Register
+
+public class TC006_RegisterCopy
 {
 	WebDriver driver;
 	HomePage Hm;
 				
-	private ThreadLocal<String> sessionId = new ThreadLocal<String>();
-	private String methodName;
-	
 	DesiredCapabilities caps = new DesiredCapabilities();
 	
 	@BeforeTest
 	@Parameters("browser")
-		
 	public void setup(String browser)throws Exception
 	{
 		if(browser.equalsIgnoreCase("Chrome"))
@@ -43,8 +39,7 @@ public class TC006_Register
 			caps.setCapability("browserName","chrome");
 			caps.setCapability("version", "latest");
 			caps.setCapability("passed",true);
-			//caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
-			caps.setCapability("build", methodName + "__" + System.getenv("BUILD_NUMBER"));
+			caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
 			caps.setCapability("Name", this.getClass().getName());
 			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
 		}
@@ -74,10 +69,8 @@ public class TC006_Register
 		driver.get(Constant.URL);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
-		String id = ((RemoteWebDriver) driver).getSessionId().toString();
-	    sessionId.set(id);
 	}
-			
+	
 	@Test(priority=0)
 	public void WelcomePage() {
 		Hm=new HomePage(driver);
@@ -102,24 +95,20 @@ public class TC006_Register
 		RG.SupplierRegistration();
 	}
 	
-	//private void printSessionId() {
-		//String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
-			//	(((RemoteWebDriver) driver).getSessionId()), this.getClass().getName());
-	    //System.out.println(message);
-		
-		// set current sessionId
-	    //String id = ((RemoteWebDriver) driver).getSessionId().toString();
-	    //sessionId.set(id);
-	//}
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+				(((RemoteWebDriver) driver).getSessionId()), this.getClass().getName());
+	    System.out.println(message);
+	}
 	
 	@AfterMethod(description = "Throw the test execution results into saucelabs")
 	public void tearDown(ITestResult result) {
 	    String txt = "sauce:job-result=" + (result.isSuccess() ? "passed" : "failed");
 	    ((RemoteWebDriver) driver).executeScript(txt);
-		//  printSessionId();
+	    printSessionId();
 	}
 	
-	protected void annotate(String text) {
+	void annotate(String text) {
 		((RemoteWebDriver) driver).executeScript("sauce:context=" + text);
 	  }
 		

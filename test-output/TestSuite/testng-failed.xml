@@ -6,8 +6,10 @@
     <classes>
       <class name="testScenarios.TC006_Register">
         <methods>
+          <include name="Register"/>
+          <include name="LegalNoticeTab"/>
           <include name="tearDown"/>
-          <include name="WelcomePage"/>
+          <include name="SupplierRegistration"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testScenarios.TC006_Register -->

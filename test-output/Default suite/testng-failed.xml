@@ -3,12 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScenarios.TC001_ForgotPassword">
+      <class name="testScenarios.TC006_Register">
         <methods>
+          <include name="Register"/>
+          <include name="LegalNoticeTab"/>
+          <include name="tearDown"/>
+          <include name="WelcomePage"/>
+          <include name="SupplierRegistration"/>
           <include name="setup"/>
-          <include name="TestLogin"/>
         </methods>
-      </class> <!-- testScenarios.TC001_ForgotPassword -->
+      </class> <!-- testScenarios.TC006_Register -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
