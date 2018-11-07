@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestSuite">
-              <span class="suite-name border-passed">TestSuite</span>
+              <span class="suite-name border-failed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-TestSuite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +114,11 @@
                       <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
                     </span>
                     <div class="method-list-content passed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC005_ForgotPassword" hash-for-method="ForgotPassword">ForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="LegalNoticeTab">LegalNoticeTab</a> <!-- method navigator-link -->
@@ -112,12 +131,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC005_ForgotPassword" hash-for-method="ResetLoginDetails">ResetLoginDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="SupplierRegistration">SupplierRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC006_Register" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testScenarios.TC005_ForgotPassword" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -132,6 +156,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testScenarios.TC006_Register</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WelcomePage">
+                  </a> <!-- WelcomePage -->
+                  <span class="method-name">WelcomePage</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;BDC7-L-4SVCVN2&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9b050e8fa6f94ca6895f34dfbff...}
+Session ID: 9b050e8fa6f94ca6895f34dfbffe5184
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at pages.HomePage.CheckCurrentPage(HomePage.java:49)
+	at testScenarios.TC006_Register.WelcomePage(TC006_Register.java:55)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -159,6 +227,28 @@
                   <span class="method-name">SupplierRegistration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScenarios.TC005_ForgotPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotPassword">
+                  </a> <!-- ForgotPassword -->
+                  <span class="method-name">ForgotPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetLoginDetails">
+                  </a> <!-- ResetLoginDetails -->
+                  <span class="method-name">ResetLoginDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="WelcomePage">
@@ -184,6 +274,12 @@
       &lt;class name=&quot;testScenarios.TC006_Register&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC006_Register --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC005_ForgotPassword&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScenarios.TC005_ForgotPassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC005_ForgotPassword --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,6 +292,9 @@
             <ul>
               <li>
                 <span class="test-name">TC006_Register (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC005_ForgotPassword (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,28 +320,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LegalNoticeTab')
+data.setCell(0, 1, 'WelcomePage')
 data.setCell(0, 2, 'testScenarios.TC006_Register')
-data.setCell(0, 3, 12348);
+data.setCell(0, 3, 9510);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'WelcomePage')
+data.setCell(1, 1, 'SupplierRegistration')
 data.setCell(1, 2, 'testScenarios.TC006_Register')
-data.setCell(1, 3, 7692);
+data.setCell(1, 3, 9281);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SupplierRegistration')
+data.setCell(2, 1, 'LegalNoticeTab')
 data.setCell(2, 2, 'testScenarios.TC006_Register')
-data.setCell(2, 3, 7577);
+data.setCell(2, 3, 8709);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Register')
-data.setCell(3, 2, 'testScenarios.TC006_Register')
-data.setCell(3, 3, 2907);
+data.setCell(3, 1, 'WelcomePage')
+data.setCell(3, 2, 'testScenarios.TC005_ForgotPassword')
+data.setCell(3, 3, 7424);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ResetLoginDetails')
+data.setCell(4, 2, 'testScenarios.TC005_ForgotPassword')
+data.setCell(4, 3, 6762);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ForgotPassword')
+data.setCell(5, 2, 'testScenarios.TC005_ForgotPassword')
+data.setCell(5, 3, 2775);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Register')
+data.setCell(6, 2, 'testScenarios.TC006_Register')
+data.setCell(6, 3, 2757);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -268,42 +379,99 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">WelcomePage</span>
-                <span class="method-start">21444 ms</span>
+                <span class="method-start">19571 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WelcomePage</span>
+                <span class="method-start">19956 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=WelcomePage status=SUCCESS method=TC006_Register.WelcomePage()[pri:0, instance:test...)</span>
-                <span class="method-start">29151 ms</span>
+                <span class="method-name">tearDown([TestResult name=WelcomePage status=SUCCESS method=TC005_ForgotPassword.WelcomePage()[pri:0, instanc...)</span>
+                <span class="method-start">26995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ForgotPassword</span>
+                <span class="method-start">27508 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=WelcomePage status=FAILURE method=TC006_Register.WelcomePage()[pri:0, instance:test...)</span>
+                <span class="method-start">29466 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Register</span>
-                <span class="method-start">29548 ms</span>
+                <span class="method-start">29960 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ForgotPassword status=SUCCESS method=TC005_ForgotPassword.ForgotPassword()[pri:1, i...)</span>
+                <span class="method-start">30283 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ResetLoginDetails</span>
+                <span class="method-start">30629 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Register status=SUCCESS method=TC006_Register.Register()[pri:1, instance:testScenar...)</span>
-                <span class="method-start">32455 ms</span>
+                <span class="method-start">32717 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">LegalNoticeTab</span>
-                <span class="method-start">32814 ms</span>
+                <span class="method-start">33218 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ResetLoginDetails status=SUCCESS method=TC005_ForgotPassword.ResetLoginDetails()[pr...)</span>
+                <span class="method-start">37407 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=LegalNoticeTab status=SUCCESS method=TC006_Register.LegalNoticeTab()[pri:2, instanc...)</span>
-                <span class="method-start">45162 ms</span>
+                <span class="method-start">41927 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">SupplierRegistration</span>
-                <span class="method-start">45618 ms</span>
+                <span class="method-start">42360 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=SupplierRegistration status=SUCCESS method=TC006_Register.SupplierRegistration()[pr...)</span>
-                <span class="method-start">53211 ms</span>
+                <span class="method-start">51645 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

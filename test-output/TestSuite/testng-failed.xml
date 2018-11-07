@@ -9,7 +9,6 @@
           <include name="tearDown"/>
           <include name="WelcomePage"/>
           <include name="setup"/>
-          <include name="getTestName"/>
         </methods>
       </class> <!-- testScenarios.TC006_Register -->
     </classes>

@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -31,35 +33,12 @@ public class TC005_ForgotPassword
 		if(browser.equalsIgnoreCase("Chrome"))
 		{
 			System.out.println("Launching Chrome");
-			caps.setCapability("name","TestChrome");
 			caps.setCapability("platform", "Windows 10");	
 			caps.setCapability("browserName","chrome");
 			caps.setCapability("version", "latest");
 			caps.setCapability("passed",true);
-			caps.setCapability("build","CrossBrowser_Test_Build1"); 
-			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
-		}
-		DesiredCapabilities caps1 = DesiredCapabilities.internetExplorer();
-		if(browser.equalsIgnoreCase("InternetExplorer1"))
-		{
-			System.out.println("Launching IE");
-			caps1.setCapability("name","IETest");
-			caps1.setCapability("platformName", "Windows 7");
-			caps1.setCapability("version","11.0");
-			caps1.setCapability("passed",true);
-			caps1.setCapability("build","CrossBrowser_Test_Build1");
-			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps1);
-		}
-		
-		if(browser.equalsIgnoreCase("Firefox"))
-		{
-			System.out.println("Launching Firefox");	
-			caps.setCapability("name","TestFirefox");
-			caps.setCapability("platform", "Windows 10");	
-			caps.setCapability("browserName","Firefox");
-			caps.setCapability("version", "latest");
-			caps.setCapability("passed",true);
-			caps.setCapability("build","CrossBrowser_Pilot"); 
+			caps.setCapability("name", "TC005_ForgotPassword");
+			caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER")); 			
 			driver = new RemoteWebDriver(new URL(Constant.SauceLabsURL),caps);
 		}
 		driver.get(Constant.URL);
@@ -84,6 +63,22 @@ public class TC005_ForgotPassword
 		RL.ResetLoginDetails();
 	}
 	
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+				(((RemoteWebDriver) driver).getSessionId()), System.getenv("JOB_NAME")+ "__" + System.getenv("BUILD_NUMBER"));
+	    System.out.println(message);
+	}
 	
+	@AfterMethod(description = "Throw the test execution results into saucelabs")
+	public void tearDown(ITestResult result) {
+	    String txt = "sauce:job-result=" + (result.isSuccess() ? "passed" : "failed");
+	    ((RemoteWebDriver) driver).executeScript(txt);
+	    printSessionId();
+	}
+	
+	void annotate(String text) {
+		((RemoteWebDriver) driver).executeScript("sauce:context=" + text);
+	  }
+
 }
 

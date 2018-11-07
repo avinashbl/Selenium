@@ -7,5 +7,9 @@
 		<parameter name='browser' value="Chrome"></parameter>
 		<classes>
 			<class name="testScenarios.TC006_Register"></class></classes></test>
+	<test name="TC005_ForgotPassword">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testScenarios.TC005_ForgotPassword"></class></classes></test>
 
 </suite>
