@@ -175,8 +175,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;BDC7-L-4SVCVN2&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9b050e8fa6f94ca6895f34dfbff...}
-Session ID: 9b050e8fa6f94ca6895f34dfbffe5184
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49746}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: dcc0148d105144d4826d3af1926...}
+Session ID: dcc0148d105144d4826d3af19260bf69
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -324,36 +324,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'WelcomePage')
 data.setCell(0, 2, 'testScenarios.TC006_Register')
-data.setCell(0, 3, 9510);
+data.setCell(0, 3, 9042);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SupplierRegistration')
-data.setCell(1, 2, 'testScenarios.TC006_Register')
-data.setCell(1, 3, 9281);
+data.setCell(1, 1, 'ResetLoginDetails')
+data.setCell(1, 2, 'testScenarios.TC005_ForgotPassword')
+data.setCell(1, 3, 8345);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LegalNoticeTab')
 data.setCell(2, 2, 'testScenarios.TC006_Register')
-data.setCell(2, 3, 8709);
+data.setCell(2, 3, 8170);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'WelcomePage')
-data.setCell(3, 2, 'testScenarios.TC005_ForgotPassword')
-data.setCell(3, 3, 7424);
+data.setCell(3, 1, 'SupplierRegistration')
+data.setCell(3, 2, 'testScenarios.TC006_Register')
+data.setCell(3, 3, 6748);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ResetLoginDetails')
+data.setCell(4, 1, 'WelcomePage')
 data.setCell(4, 2, 'testScenarios.TC005_ForgotPassword')
-data.setCell(4, 3, 6762);
+data.setCell(4, 3, 6341);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'ForgotPassword')
 data.setCell(5, 2, 'testScenarios.TC005_ForgotPassword')
-data.setCell(5, 3, 2775);
+data.setCell(5, 3, 4152);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'Register')
 data.setCell(6, 2, 'testScenarios.TC006_Register')
-data.setCell(6, 3, 2757);
+data.setCell(6, 3, 3037);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -396,7 +396,7 @@ return data;
               <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">WelcomePage</span>
-                <span class="method-start">19571 ms</span>
+                <span class="method-start">16993 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -405,73 +405,49 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">WelcomePage</span>
-                <span class="method-start">19956 ms</span>
+                <span class="method-start">20916 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=WelcomePage status=SUCCESS method=TC005_ForgotPassword.WelcomePage()[pri:0, instanc...)</span>
-                <span class="method-start">26995 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ForgotPassword</span>
-                <span class="method-start">27508 ms</span>
+                <span class="method-start">23334 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ResetLoginDetails</span>
+                <span class="method-start">27486 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=WelcomePage status=FAILURE method=TC006_Register.WelcomePage()[pri:0, instance:test...)</span>
-                <span class="method-start">29466 ms</span>
+                <span class="method-start">29958 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Register</span>
-                <span class="method-start">29960 ms</span>
+                <span class="method-start">30309 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=ForgotPassword status=SUCCESS method=TC005_ForgotPassword.ForgotPassword()[pri:1, i...)</span>
-                <span class="method-start">30283 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">ResetLoginDetails</span>
-                <span class="method-start">30629 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=Register status=SUCCESS method=TC006_Register.Register()[pri:1, instance:testScenar...)</span>
-                <span class="method-start">32717 ms</span>
+                <span class="method-start">33346 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">LegalNoticeTab</span>
-                <span class="method-start">33218 ms</span>
+                <span class="method-start">33824 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testScenarios.TC005_ForgotPassword</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=ResetLoginDetails status=SUCCESS method=TC005_ForgotPassword.ResetLoginDetails()[pr...)</span>
-                <span class="method-start">37407 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testScenarios.TC006_Register</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=LegalNoticeTab status=SUCCESS method=TC006_Register.LegalNoticeTab()[pri:2, instanc...)</span>
-                <span class="method-start">41927 ms</span>
+                <span class="method-start">41994 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">SupplierRegistration</span>
-                <span class="method-start">42360 ms</span>
+                <span class="method-start">42339 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=SupplierRegistration status=SUCCESS method=TC006_Register.SupplierRegistration()[pr...)</span>
-                <span class="method-start">51645 ms</span>
+                <span class="method-start">49091 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

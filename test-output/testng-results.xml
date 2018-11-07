@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="52002" started-at="2018-11-07T04:46:18Z" finished-at="2018-11-07T04:47:10Z">
+  <suite name="TestSuite" duration-ms="50706" started-at="2018-11-07T05:14:33Z" finished-at="2018-11-07T05:15:23Z">
     <groups>
     </groups>
-    <test name="TC005_ForgotPassword" duration-ms="37815" started-at="2018-11-07T04:46:18Z" finished-at="2018-11-07T04:46:56Z">
+    <test name="TC005_ForgotPassword" duration-ms="35846" started-at="2018-11-07T05:14:33Z" finished-at="2018-11-07T05:15:08Z">
       <class name="testScenarios.TC005_ForgotPassword">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="setup" is-config="true" duration-ms="19555" started-at="2018-11-07T04:46:18Z" finished-at="2018-11-07T04:46:37Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="setup" is-config="true" duration-ms="16956" started-at="2018-11-07T05:14:33Z" finished-at="2018-11-07T05:14:50Z">
           <params>
             <param index="0">
               <value>
@@ -18,56 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="WelcomePage" duration-ms="7424" started-at="2018-11-07T04:46:37Z" finished-at="2018-11-07T04:46:45Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="WelcomePage" duration-ms="6341" started-at="2018-11-07T05:14:50Z" finished-at="2018-11-07T05:14:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="tearDown" is-config="true" duration-ms="501" started-at="2018-11-07T04:46:45Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:46:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=WelcomePage status=SUCCESS method=TC005_ForgotPassword.WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="ForgotPassword" duration-ms="2775" started-at="2018-11-07T04:46:45Z" finished-at="2018-11-07T04:46:48Z">
+        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="ForgotPassword" duration-ms="4152" started-at="2018-11-07T05:14:56Z" finished-at="2018-11-07T05:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="tearDown" is-config="true" duration-ms="331" started-at="2018-11-07T04:46:48Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:46:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ForgotPassword status=SUCCESS method=TC005_ForgotPassword.ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@343f4d3d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="ResetLoginDetails" duration-ms="6762" started-at="2018-11-07T04:46:48Z" finished-at="2018-11-07T04:46:55Z">
+        <test-method status="PASS" signature="ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="ResetLoginDetails" duration-ms="8345" started-at="2018-11-07T05:15:00Z" finished-at="2018-11-07T05:15:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ResetLoginDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@343f4d3d]" name="tearDown" is-config="true" duration-ms="401" started-at="2018-11-07T04:46:55Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:46:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ResetLoginDetails status=SUCCESS method=TC005_ForgotPassword.ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@343f4d3d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testScenarios.TC005_ForgotPassword -->
     </test> <!-- TC005_ForgotPassword -->
-    <test name="TC006_Register" duration-ms="52002" started-at="2018-11-07T04:46:18Z" finished-at="2018-11-07T04:47:10Z">
+    <test name="TC006_Register" duration-ms="50706" started-at="2018-11-07T05:14:33Z" finished-at="2018-11-07T05:15:23Z">
       <class name="testScenarios.TC006_Register">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="setup" is-config="true" duration-ms="19956" started-at="2018-11-07T04:46:18Z" finished-at="2018-11-07T04:46:38Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="setup" is-config="true" duration-ms="20916" started-at="2018-11-07T05:14:33Z" finished-at="2018-11-07T05:14:54Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="WelcomePage" duration-ms="9510" started-at="2018-11-07T04:46:38Z" finished-at="2018-11-07T04:46:47Z">
+        <test-method status="FAIL" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="WelcomePage" duration-ms="9042" started-at="2018-11-07T05:14:54Z" finished-at="2018-11-07T05:15:03Z">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: element is not attached to the page document
@@ -89,8 +56,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
 System info: host: 'BDC7-L-4SVCVN2', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9b050e8fa6f94ca6895f34dfbff...}
-Session ID: 9b050e8fa6f94ca6895f34dfbffe5184]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49746}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: dcc0148d105144d4826d3af1926...}
+Session ID: dcc0148d105144d4826d3af19260bf69]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
@@ -101,8 +68,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
 System info: host: 'BDC7-L-4SVCVN2', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49752}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9b050e8fa6f94ca6895f34dfbff...}
-Session ID: 9b050e8fa6f94ca6895f34dfbffe5184
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49746}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: dcc0148d105144d4826d3af1926...}
+Session ID: dcc0148d105144d4826d3af19260bf69
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -150,7 +117,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="494" started-at="2018-11-07T04:46:47Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:46:48Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="347" started-at="2018-11-07T05:15:03Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T05:15:03Z">
           <params>
             <param index="0">
               <value>
@@ -161,11 +128,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@46d56d67]" name="Register" duration-ms="2757" started-at="2018-11-07T04:46:48Z" finished-at="2018-11-07T04:46:51Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@46d56d67]" name="Register" duration-ms="3037" started-at="2018-11-07T05:15:03Z" finished-at="2018-11-07T05:15:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="501" started-at="2018-11-07T04:46:51Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:46:51Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="473" started-at="2018-11-07T05:15:06Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T05:15:06Z">
           <params>
             <param index="0">
               <value>
@@ -176,11 +143,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@46d56d67]" name="LegalNoticeTab" duration-ms="8709" started-at="2018-11-07T04:46:51Z" finished-at="2018-11-07T04:47:00Z">
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@46d56d67]" name="LegalNoticeTab" duration-ms="8170" started-at="2018-11-07T05:15:06Z" finished-at="2018-11-07T05:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LegalNoticeTab -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="432" started-at="2018-11-07T04:47:00Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:47:00Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="331" started-at="2018-11-07T05:15:15Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T05:15:15Z">
           <params>
             <param index="0">
               <value>
@@ -191,11 +158,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@46d56d67]" name="SupplierRegistration" duration-ms="9281" started-at="2018-11-07T04:47:00Z" finished-at="2018-11-07T04:47:09Z">
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@46d56d67]" name="SupplierRegistration" duration-ms="6748" started-at="2018-11-07T05:15:15Z" finished-at="2018-11-07T05:15:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupplierRegistration -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="350" started-at="2018-11-07T04:47:09Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T04:47:10Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@46d56d67]" name="tearDown" is-config="true" duration-ms="1615" started-at="2018-11-07T05:15:22Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T05:15:23Z">
           <params>
             <param index="0">
               <value>

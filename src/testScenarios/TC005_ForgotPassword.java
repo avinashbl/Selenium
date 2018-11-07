@@ -63,22 +63,6 @@ public class TC005_ForgotPassword
 		RL.ResetLoginDetails();
 	}
 	
-	private void printSessionId() {
-		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
-				(((RemoteWebDriver) driver).getSessionId()), System.getenv("JOB_NAME")+ "__" + System.getenv("BUILD_NUMBER"));
-	    System.out.println(message);
-	}
 	
-	@AfterMethod(description = "Throw the test execution results into saucelabs")
-	public void tearDown(ITestResult result) {
-	    String txt = "sauce:job-result=" + (result.isSuccess() ? "passed" : "failed");
-	    ((RemoteWebDriver) driver).executeScript(txt);
-	    printSessionId();
-	}
-	
-	void annotate(String text) {
-		((RemoteWebDriver) driver).executeScript("sauce:context=" + text);
-	  }
-
 }
 
