@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="56401" started-at="2018-11-07T08:03:14Z" finished-at="2018-11-07T08:04:10Z">
+  <suite name="TestSuite" duration-ms="55441" started-at="2018-11-07T13:00:46Z" finished-at="2018-11-07T13:01:42Z">
     <groups>
     </groups>
-    <test name="TC005_ForgotPassword" duration-ms="40452" started-at="2018-11-07T08:03:14Z" finished-at="2018-11-07T08:03:54Z">
+    <test name="TC005_ForgotPassword" duration-ms="52189" started-at="2018-11-07T13:00:46Z" finished-at="2018-11-07T13:01:38Z">
       <class name="testScenarios.TC005_ForgotPassword">
-        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="createRemoteDriver" is-config="true" duration-ms="17884" started-at="2018-11-07T08:03:14Z" finished-at="2018-11-07T08:03:32Z">
+        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="createRemoteDriver" is-config="true" duration-ms="37955" started-at="2018-11-07T13:00:46Z" finished-at="2018-11-07T13:01:24Z">
           <params>
             <param index="0">
               <value>
@@ -18,45 +18,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createRemoteDriver -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="WelcomePage" duration-ms="8406" started-at="2018-11-07T08:03:32Z" finished-at="2018-11-07T08:03:40Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="WelcomePage" duration-ms="3221" started-at="2018-11-07T13:01:24Z" finished-at="2018-11-07T13:01:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="tearDown" is-config="true" duration-ms="463" started-at="2018-11-07T08:03:40Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:03:41Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="363" started-at="2018-11-07T13:01:27Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=WelcomePage status=SUCCESS method=TC005_ForgotPassword.WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@239963d8] output={null}]]]>
+                <![CDATA[[TestResult name=WelcomePage status=SUCCESS method=TC005_ForgotPassword.WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="ForgotPassword" duration-ms="5119" started-at="2018-11-07T08:03:41Z" finished-at="2018-11-07T08:03:46Z">
+        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="ForgotPassword" duration-ms="2740" started-at="2018-11-07T13:01:28Z" finished-at="2018-11-07T13:01:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="tearDown" is-config="true" duration-ms="338" started-at="2018-11-07T08:03:46Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:03:46Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="1333" started-at="2018-11-07T13:01:31Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ForgotPassword status=SUCCESS method=TC005_ForgotPassword.ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@239963d8] output={null}]]]>
+                <![CDATA[[TestResult name=ForgotPassword status=SUCCESS method=TC005_ForgotPassword.ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@7cd62f43] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="ResetLoginDetails" duration-ms="7791" started-at="2018-11-07T08:03:46Z" finished-at="2018-11-07T08:03:54Z">
+        <test-method status="PASS" signature="ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="ResetLoginDetails" duration-ms="5305" started-at="2018-11-07T13:01:32Z" finished-at="2018-11-07T13:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ResetLoginDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@239963d8]" name="tearDown" is-config="true" duration-ms="432" started-at="2018-11-07T08:03:54Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:03:54Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="1256" started-at="2018-11-07T13:01:37Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ResetLoginDetails status=SUCCESS method=TC005_ForgotPassword.ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@239963d8] output={null}]]]>
+                <![CDATA[[TestResult name=ResetLoginDetails status=SUCCESS method=TC005_ForgotPassword.ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@7cd62f43] output={null}]]]>
               </value>
             </param>
           </params>
@@ -65,9 +65,9 @@
         </test-method> <!-- tearDown -->
       </class> <!-- testScenarios.TC005_ForgotPassword -->
     </test> <!-- TC005_ForgotPassword -->
-    <test name="TC006_Register" duration-ms="56401" started-at="2018-11-07T08:03:14Z" finished-at="2018-11-07T08:04:10Z">
+    <test name="TC006_Register" duration-ms="55441" started-at="2018-11-07T13:00:46Z" finished-at="2018-11-07T13:01:42Z">
       <class name="testScenarios.TC006_Register">
-        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@27efef64]" name="createRemoteDriver" is-config="true" duration-ms="20827" started-at="2018-11-07T08:03:14Z" finished-at="2018-11-07T08:03:35Z">
+        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="createRemoteDriver" is-config="true" duration-ms="30041" started-at="2018-11-07T13:00:46Z" finished-at="2018-11-07T13:01:16Z">
           <params>
             <param index="0">
               <value>
@@ -78,60 +78,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createRemoteDriver -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@27efef64]" name="WelcomePage" duration-ms="15417" started-at="2018-11-07T08:03:35Z" finished-at="2018-11-07T08:03:50Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="WelcomePage" duration-ms="2635" started-at="2018-11-07T13:01:16Z" finished-at="2018-11-07T13:01:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@27efef64]" name="tearDown" is-config="true" duration-ms="548" started-at="2018-11-07T08:03:50Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:03:51Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="438" started-at="2018-11-07T13:01:19Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=WelcomePage status=SUCCESS method=TC006_Register.WelcomePage()[pri:0, instance:testScenarios.TC006_Register@27efef64] output={null}]]]>
+                <![CDATA[[TestResult name=WelcomePage status=SUCCESS method=TC006_Register.WelcomePage()[pri:0, instance:testScenarios.TC006_Register@18be83e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@27efef64]" name="Register" duration-ms="2569" started-at="2018-11-07T08:03:51Z" finished-at="2018-11-07T08:03:53Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@18be83e4]" name="Register" duration-ms="3865" started-at="2018-11-07T13:01:19Z" finished-at="2018-11-07T13:01:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@27efef64]" name="tearDown" is-config="true" duration-ms="447" started-at="2018-11-07T08:03:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:03:54Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="385" started-at="2018-11-07T13:01:23Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Register status=SUCCESS method=TC006_Register.Register()[pri:1, instance:testScenarios.TC006_Register@27efef64] output={null}]]]>
+                <![CDATA[[TestResult name=Register status=SUCCESS method=TC006_Register.Register()[pri:1, instance:testScenarios.TC006_Register@18be83e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@27efef64]" name="LegalNoticeTab" duration-ms="9045" started-at="2018-11-07T08:03:54Z" finished-at="2018-11-07T08:04:03Z">
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@18be83e4]" name="LegalNoticeTab" duration-ms="9473" started-at="2018-11-07T13:01:24Z" finished-at="2018-11-07T13:01:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LegalNoticeTab -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@27efef64]" name="tearDown" is-config="true" duration-ms="385" started-at="2018-11-07T08:04:03Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:04:03Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="370" started-at="2018-11-07T13:01:33Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LegalNoticeTab status=SUCCESS method=TC006_Register.LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@27efef64] output={null}]]]>
+                <![CDATA[[TestResult name=LegalNoticeTab status=SUCCESS method=TC006_Register.LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@18be83e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@27efef64]" name="SupplierRegistration" duration-ms="6802" started-at="2018-11-07T08:04:03Z" finished-at="2018-11-07T08:04:10Z">
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@18be83e4]" name="SupplierRegistration" duration-ms="7679" started-at="2018-11-07T13:01:34Z" finished-at="2018-11-07T13:01:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupplierRegistration -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@27efef64]" name="tearDown" is-config="true" duration-ms="344" started-at="2018-11-07T08:04:10Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-07T08:04:10Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="461" started-at="2018-11-07T13:01:41Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-07T13:01:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SupplierRegistration status=SUCCESS method=TC006_Register.SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@27efef64] output={null}]]]>
+                <![CDATA[[TestResult name=SupplierRegistration status=SUCCESS method=TC006_Register.SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@18be83e4] output={null}]]]>
               </value>
             </param>
           </params>

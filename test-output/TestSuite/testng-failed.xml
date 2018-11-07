@@ -6,8 +6,11 @@
     <classes>
       <class name="testScenarios.TC005_ForgotPassword">
         <methods>
-          <include name="setup"/>
+          <include name="createRemoteDriver"/>
+          <include name="tearDown"/>
           <include name="WelcomePage"/>
+          <include name="ForgotPassword"/>
+          <include name="ResetLoginDetails"/>
         </methods>
       </class> <!-- testScenarios.TC005_ForgotPassword -->
     </classes>
