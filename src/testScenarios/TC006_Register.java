@@ -21,6 +21,7 @@ import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
 
+
 public class TC006_Register
 {
 	HomePage Hm;
@@ -66,6 +67,7 @@ public class TC006_Register
 		webDriver.set(new RemoteWebDriver( 
 		                new URL("https://" + SUSERNAME + ":" + SACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub"), 
 		                capabilities)); 
+		// set current sessionId
 		String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString(); 
 		sessionId.set(id); 
 		getURL();
@@ -100,9 +102,16 @@ public class TC006_Register
 		RG.SupplierRegistration();
 	}
 	
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+				((RemoteWebDriver) getWebDriver()).getSessionId(), System.getenv("JOB_NAME")+ "__" + System.getenv("BUILD_NUMBER"));
+	    System.out.println(message);
+	}
+		
 	@AfterMethod(description = "Method that gets invoked after test. Gets and dumps browser log and closes the browser")
 	public void tearDown(ITestResult result) {
 		((JavascriptExecutor) webDriver.get()).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));
+		printSessionId();
 	}
 	
 	void annotate(String text) {

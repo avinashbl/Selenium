@@ -48,7 +48,7 @@ public class TC005_ForgotPassword
 	@BeforeTest
 	@Parameters("browser")
 	
-	public void createRemoteDriver(String browser) throws Exception {
+	public void createRemoteDriver(String browser) throws Exception  {
     	DesiredCapabilities capabilities = new DesiredCapabilities();
     	Class<? extends TC005_ForgotPassword> SLclass = this.getClass();
     	
@@ -67,9 +67,10 @@ public class TC005_ForgotPassword
 		webDriver.set(new RemoteWebDriver( 
                 new URL("https://" + SUSERNAME + ":" + SACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub"), 
                 capabilities)); 
+		// set current sessionId
 		String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString(); 
 		sessionId.set(id); 
-	    getURL();
+		getURL();
 	}
 		
 	private void getURL() {
@@ -95,16 +96,16 @@ public class TC005_ForgotPassword
 		RL.ResetLoginDetails();
 	}
 	
-	//private void printSessionId() {
-		//String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
-			//	getWebDriver().getSessionId(),System.getenv("JOB_NAME")+ "__" + System.getenv("BUILD_NUMBER"));
-	    //System.out.println(message);
-//	}
+	private void printSessionId() {
+		String message = String.format("SauceOnDemandSessionID=%1$s job-name=%2$s",
+				((RemoteWebDriver) getWebDriver()).getSessionId(), System.getenv("JOB_NAME")+ "__" + System.getenv("BUILD_NUMBER"));
+	    System.out.println(message);
+	}
 	
 	@AfterMethod(description = "Method that gets invoked after test. Gets and dumps browser log and closes the browser")
 	public void tearDown(ITestResult result) {
 	    ((JavascriptExecutor) webDriver.get()).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));
-	   // webDriver.get().quit();
+	    printSessionId();
 	}
 	
 	void annotate(String text) {
