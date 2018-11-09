@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="60700" started-at="2018-11-09T07:09:21Z" finished-at="2018-11-09T07:10:22Z">
+  <suite name="TestSuite" duration-ms="48621" started-at="2018-11-09T09:12:21Z" finished-at="2018-11-09T09:13:09Z">
     <groups>
     </groups>
-    <test name="TC005_ForgotPassword" duration-ms="34819" started-at="2018-11-09T07:09:21Z" finished-at="2018-11-09T07:09:56Z">
+    <test name="TC005_ForgotPassword" duration-ms="38121" started-at="2018-11-09T09:12:21Z" finished-at="2018-11-09T09:12:59Z">
       <class name="testScenarios.TC005_ForgotPassword">
-        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="createRemoteDriver" is-config="true" duration-ms="18704" started-at="2018-11-09T07:09:21Z" finished-at="2018-11-09T07:09:40Z">
+        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="createRemoteDriver" is-config="true" duration-ms="20002" started-at="2018-11-09T09:12:21Z" finished-at="2018-11-09T09:12:41Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createRemoteDriver -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="WelcomePage" duration-ms="7681" started-at="2018-11-09T07:09:40Z" finished-at="2018-11-09T07:09:47Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="WelcomePage" duration-ms="7012" started-at="2018-11-09T09:12:41Z" finished-at="2018-11-09T09:12:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="317" started-at="2018-11-09T07:09:47Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:09:48Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="364" started-at="2018-11-09T09:12:48Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:12:48Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="ForgotPassword" duration-ms="2356" started-at="2018-11-09T07:09:48Z" finished-at="2018-11-09T07:09:50Z">
+        <test-method status="PASS" signature="ForgotPassword()[pri:1, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="ForgotPassword" duration-ms="4395" started-at="2018-11-09T09:12:48Z" finished-at="2018-11-09T09:12:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="289" started-at="2018-11-09T07:09:50Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:09:50Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="300" started-at="2018-11-09T09:12:53Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:12:53Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="ResetLoginDetails" duration-ms="5140" started-at="2018-11-09T07:09:50Z" finished-at="2018-11-09T07:09:56Z">
+        <test-method status="PASS" signature="ResetLoginDetails()[pri:2, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="ResetLoginDetails" duration-ms="5735" started-at="2018-11-09T09:12:53Z" finished-at="2018-11-09T09:12:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ResetLoginDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="297" started-at="2018-11-09T07:09:56Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:09:56Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC005_ForgotPassword@7cd62f43]" name="tearDown" is-config="true" duration-ms="307" started-at="2018-11-09T09:12:59Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:12:59Z">
           <params>
             <param index="0">
               <value>
@@ -65,9 +65,9 @@
         </test-method> <!-- tearDown -->
       </class> <!-- testScenarios.TC005_ForgotPassword -->
     </test> <!-- TC005_ForgotPassword -->
-    <test name="TC006_Register" duration-ms="60700" started-at="2018-11-09T07:09:21Z" finished-at="2018-11-09T07:10:22Z">
+    <test name="TC006_Register" duration-ms="48621" started-at="2018-11-09T09:12:21Z" finished-at="2018-11-09T09:13:09Z">
       <class name="testScenarios.TC006_Register">
-        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="createRemoteDriver" is-config="true" duration-ms="26433" started-at="2018-11-09T07:09:21Z" finished-at="2018-11-09T07:09:47Z">
+        <test-method status="PASS" signature="createRemoteDriver(java.lang.String)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="createRemoteDriver" is-config="true" duration-ms="18582" started-at="2018-11-09T09:12:21Z" finished-at="2018-11-09T09:12:39Z">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createRemoteDriver -->
-        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="WelcomePage" duration-ms="8764" started-at="2018-11-09T07:09:47Z" finished-at="2018-11-09T07:09:56Z">
+        <test-method status="PASS" signature="WelcomePage()[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="WelcomePage" duration-ms="6543" started-at="2018-11-09T09:12:39Z" finished-at="2018-11-09T09:12:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WelcomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="270" started-at="2018-11-09T07:09:56Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:09:56Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="371" started-at="2018-11-09T09:12:46Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:12:46Z">
           <params>
             <param index="0">
               <value>
@@ -93,11 +93,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@18be83e4]" name="Register" duration-ms="5645" started-at="2018-11-09T07:09:56Z" finished-at="2018-11-09T07:10:02Z">
+        <test-method status="PASS" signature="Register()[pri:1, instance:testScenarios.TC006_Register@18be83e4]" name="Register" duration-ms="2392" started-at="2018-11-09T09:12:46Z" finished-at="2018-11-09T09:12:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="303" started-at="2018-11-09T07:10:02Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:10:02Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="1018" started-at="2018-11-09T09:12:49Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:12:50Z">
           <params>
             <param index="0">
               <value>
@@ -108,11 +108,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@18be83e4]" name="LegalNoticeTab" duration-ms="10642" started-at="2018-11-09T07:10:02Z" finished-at="2018-11-09T07:10:13Z">
+        <test-method status="PASS" signature="LegalNoticeTab()[pri:2, instance:testScenarios.TC006_Register@18be83e4]" name="LegalNoticeTab" duration-ms="12204" started-at="2018-11-09T09:12:50Z" finished-at="2018-11-09T09:13:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LegalNoticeTab -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="357" started-at="2018-11-09T07:10:13Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:10:13Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="347" started-at="2018-11-09T09:13:02Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:13:02Z">
           <params>
             <param index="0">
               <value>
@@ -123,11 +123,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@18be83e4]" name="SupplierRegistration" duration-ms="7842" started-at="2018-11-09T07:10:13Z" finished-at="2018-11-09T07:10:21Z">
+        <test-method status="PASS" signature="SupplierRegistration()[pri:3, instance:testScenarios.TC006_Register@18be83e4]" name="SupplierRegistration" duration-ms="6782" started-at="2018-11-09T09:13:02Z" finished-at="2018-11-09T09:13:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupplierRegistration -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="434" started-at="2018-11-09T07:10:21Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T07:10:22Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScenarios.TC006_Register@18be83e4]" name="tearDown" is-config="true" duration-ms="324" started-at="2018-11-09T09:13:09Z" description="Method that gets invoked after test. Gets and dumps browser log and closes the browser" finished-at="2018-11-09T09:13:09Z">
           <params>
             <param index="0">
               <value>

@@ -59,7 +59,6 @@ public class TC005_ForgotPassword
     	        
     	capabilities.setCapability("version", "latest");
     	capabilities.setCapability("platform", "Windows 10");	
-		capabilities.setCapability("passed",true);
 		capabilities.setCapability("name", SLclass.getSimpleName());
 		capabilities.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
 		
